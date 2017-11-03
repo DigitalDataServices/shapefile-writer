@@ -21,7 +21,9 @@ Shapefile Writer  was developed using Web AppBuilder v2.5, but should be compati
 - [License](#license)
 
 ### Installation ###
-
+1. Copy shapefile-writer library into the libs folder of Web AppBuilder.
+2. Create feature action.
+	[Create Feature Action Documentation](https://developers.arcgis.com/web-appbuilder/guide/create-a-feature-action-in-your-widget.htm)
 
 
 ### Usage ###
