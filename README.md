@@ -30,6 +30,7 @@ getGeoJsonForShpFile: function() {
 ```
 3. Create feature action that utilizes the newly created method to return geojson for use with the shapefile-writer library.
 	- [Create Feature Action Documentation](https://developers.arcgis.com/web-appbuilder/guide/create-a-feature-action-in-your-widget.htm)
+4. Bring, into the new feature action, exportUtils, and the zipModule from the shapefile-writer library.
 ```
 EXAMPLE:
 
@@ -88,10 +89,11 @@ saveAs(res, "ExportShp.zip")
 
 ### Limitations ###
 
-2017-11-03 - Initial upload.
+Currently supports 2D points, lines, and polygons.
 
 ### History ###
 
+2017-11-03 - Initial upload.
 
 ### Credits ###
 Tom MacWright [Original Source](https://github.com/mapbox/shp-write) </br>
