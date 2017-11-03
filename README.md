@@ -8,7 +8,7 @@ AMD Shapefile Writer for Web AppBuilder utilizing jszip to produce zipped shapef
 
 ### Requirements ###
 Shapefile Writer  was developed using Web AppBuilder v2.5, but should be compatible with older versions that support AMD.
-[Documentation](https://developers.arcgis.com/web-appbuilder/sample-code/add-a-third-party-library.htm)
+<a href="https://developers.arcgis.com/web-appbuilder/sample-code/add-a-third-party-library.htm" target="_blank">Third Party Library Documentation</a>()
 
 ### Table of Contents ###
 - [Installation](#installation)
