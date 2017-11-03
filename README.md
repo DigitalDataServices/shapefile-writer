@@ -13,8 +13,6 @@ Shapefile Writer  was developed using Web AppBuilder v2.5, but should be compati
 ### Table of Contents ###
 - [Installation](#installation)
 - [Usage](#usage)
-	- [Initial Configuration](#initial-configuration)
-	- [Hiding and Showing the Time Slider Widget](#hiding-and-showing-the-time-slider-widget)
 - [Limitations](#limitations)
 - [History](#history)
 - [Credits](#credits)
