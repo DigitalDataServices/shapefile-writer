@@ -2,7 +2,7 @@
   "name": "shapefile-writer",
   "version": "1.0.0",
   "description": "- [Installation](#installation)\r - [Usage](#usage)\r \t- [Initial Configuration](#initial-configuration)\r \t- [Hiding and Showing the Time Slider Widget](#hiding-and-showing-the-time-slider-widget)\r - [Limitations](#limitations)\r - [History](#history)\r - [Credits](#credits)\r - [License](#license)",
-  "main": "./shp-write/zip.js",
+  "main": "shp-write/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
