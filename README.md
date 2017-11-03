@@ -2,11 +2,12 @@
 
 
 ### Description ###
-asdfasdf
+AMD Shapefile Writer for Web AppBuilder utilizing jszip to produce zipped shapefiles capable of being uploaded with Web AppBuilder. The module was designed to be used as WAB Feature Action, but my be applicable anywhere inolving geojson.
 
+![shp-write](https://user-images.githubusercontent.com/8050421/32394176-d82208d4-c0a1-11e7-9b45-e4036f6fd6ba.png)
 
 ### Requirements ###
-
+The shapefile-writer was developed using Web AppBuilder v2.5, but should be compatible with older versions that support AMD. 
 
 ### Table of Contents ###
 - [Installation](#installation)
