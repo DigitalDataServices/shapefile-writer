@@ -22,8 +22,56 @@ Shapefile Writer  was developed using Web AppBuilder v2.5, but should be compati
 
 ### Installation ###
 1. Copy shapefile-writer library into the libs folder of Web AppBuilder.
-2. Create feature action.
+2. In jimu/exportUtils.js create a method utilizing existing methods that returns geojson (geojson to be utilized within a feature action).
+```
+getGeoJsonForShpFile: function() {
+        return this.getExportString()
+      }
+```
+3. Create feature action that utilizes the newly created method to return geojson for use with the shapefile-writer library.
 	- [Create Feature Action Documentation](https://developers.arcgis.com/web-appbuilder/guide/create-a-feature-action-in-your-widget.htm)
+```
+define([
+  'dojo/_base/declare',
+  '../BaseFeatureAction',
+  '../exportUtils',
+  '../../libs/jszip/jszip',
+  '../../libs/shp-write/zip'
+], function(declare, BaseFeatureAction, exportUtils, jszip, zipMod){
+  var clazz = declare(BaseFeatureAction, {
+    name: 'ExportToShapefile',
+    iconClass: 'icon-export',
+
+    isFeatureSupported: function(featureSet){
+      return featureSet.features.length > 0 && featureSet.features[0].geometry;
+    },
+
+    onExecute: function(featureSet){
+      var ds = exportUtils.createDataSource({
+        type: exportUtils.TYPE_FEATURESET,
+        filename: 'features',
+        data: featureSet
+      });
+
+
+      ds.setFormat(exportUtils.FORMAT_GEOJSON);
+
+      ds.getGeoJsonForShpFile()
+        .then(function(str) {
+          var parsedStr = JSON.parse(str)
+
+          return zipMod.zip(parsedStr)
+      })
+        .then(function(res) {
+
+          saveAs(res, "ExportShp.zip")
+        });
+    }
+
+  });
+  return clazz;
+});
+```
 
 
 ### Usage ###
