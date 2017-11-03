@@ -1,8 +1,8 @@
 (function (root, factory) {
   if(typeof define === "function" && define.amd) {
-    define(['../jszip/jszip', './geojson', './write', './prj'], factory);
+    define(['./jszip', './geojson', './write', './prj'], factory);
   } else if(typeof module === "object" && module.exports) {
-    module.exports = factory(require('../jszip/jszip'), require('./geojson'), require('./write'), require('./prj'));
+    module.exports = factory(require('./jszip'), require('./geojson'), require('./write'), require('./prj'));
   } else {
     root.test = factory();
   }
