@@ -97,6 +97,7 @@ Currently supports 2D points, lines, and polygons.
 
 ### Credits ###
 Tom MacWright [Original Source](https://github.com/mapbox/shp-write) </br>
+</br>
 DDS [Digital Data Services, Inc.](http://www.digitaldataservices.com), is a Geocortex Implementation Solution Provider and Esri Silver Business Partner that specializes in the creation, conversion, management, integration, and presentation of geospatial information. Our expertise focuses on providing simple solutions to complex business challenges and allowing our clients to leverage and explore their data in new and unique ways. As experts in research, data processing, data storage/management, data analysis, and presentation, we serve our clients by making complex analytical decisions available to everyone. Our vision is that access to geospatial information should not be a barrier to making business decisions.
 
 ### License ###
