@@ -61,10 +61,10 @@ define([
       ds.setFormat(exportUtils.FORMAT_GEOJSON);
 
       ds.getGeoJsonForShpFile()
-        .then(function(str) {
-          var parsedStr = JSON.parse(str)
+        .then(function(geojson) {
+          var parsedGj = JSON.parse(geojson)
 
-          return zipMod.zip(parsedStr)
+          return zipMod.zip(parsedGj)
       })
         .then(function(res) {
 
@@ -90,12 +90,14 @@ saveAs(res, "ExportShp.zip")
 
 ### Limitations ###
 
+2016-11-03 - Initial upload.
 
 ### History ###
 
 
 ### Credits ###
-
+Tom MacWright [Original Source](https://github.com/mapbox/shp-write)
+DDS [Digital Data Services, Inc.](http://www.digitaldataservices.com), is a Geocortex Implementation Solution Provider and Esri Silver Business Partner that specializes in the creation, conversion, management, integration, and presentation of geospatial information. Our expertise focuses on providing simple solutions to complex business challenges and allowing our clients to leverage and explore their data in new and unique ways. As experts in research, data processing, data storage/management, data analysis, and presentation, we serve our clients by making complex analytical decisions available to everyone. Our vision is that access to geospatial information should not be a barrier to making business decisions.
 
 ### License ###
 
