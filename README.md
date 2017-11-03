@@ -24,6 +24,8 @@ Shapefile Writer  was developed using Web AppBuilder v2.5, but should be compati
 1. Copy shapefile-writer library into the libs folder of Web AppBuilder.
 2. In jimu/exportUtils.js create a method utilizing existing methods that returns geojson (geojson to be utilized within a feature action).
 ```
+EXAMPLE:
+
 getGeoJsonForShpFile: function() {
         return this.getExportString()
       }
@@ -31,6 +33,8 @@ getGeoJsonForShpFile: function() {
 3. Create feature action that utilizes the newly created method to return geojson for use with the shapefile-writer library.
 	- [Create Feature Action Documentation](https://developers.arcgis.com/web-appbuilder/guide/create-a-feature-action-in-your-widget.htm)
 ```
+EXAMPLE:
+
 define([
   'dojo/_base/declare',
   '../BaseFeatureAction',
@@ -75,7 +79,14 @@ define([
 
 
 ### Usage ###
-
+1. Utilizing the zip.js module, pass parsed geojson into the zip module's zip method (returns promise).
+```
+zipMod.zip(parsedStr)
+```
+2. Utilize WAB global saveAs method to save the zip file.
+```
+saveAs(res, "ExportShp.zip")
+```
 
 ### Limitations ###
 
