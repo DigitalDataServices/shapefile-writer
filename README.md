@@ -102,7 +102,7 @@ DDS [Digital Data Services, Inc.](http://www.digitaldataservices.com), is a Geoc
 
 ### License ###
 
-#### [Original License] (https://github.com/mapbox/shp-write/blob/master/LICENSE)
+#### [Original License](https://github.com/mapbox/shp-write/blob/master/LICENSE)
 
 Copyright (c) 2015, Mapbox
 All rights reserved.
