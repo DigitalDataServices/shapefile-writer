@@ -87,7 +87,7 @@ define([
 ```
 zipMod.zip(parsedStr)
 ```
-2. Utilize WAB's global saveAs method by passing it the response from step 1's zip method. Pass in the name of zip file as a second argument. 
+2. Utilize saveAs method by passing it the response from step 1's zip method and the name of zip file as as arguments respectively. 
 ```
 saveAs(res, "ExportShp.zip")
 ```
