@@ -4,7 +4,7 @@
 ### Description ###
 AMD Shapefile Writer for Web AppBuilder utilizing jszip to produce zipped shapefiles capable of being uploaded with Web AppBuilder. The module was designed for use as a WAB Feature Action, but may be applicable anywhere when handling geojson. Original source code was adapted to support multiple features with unique attributes, and to be more applicable to Web AppBuilder.
 
-Changes: </br>
+### Changes
 Original source code was written to produce point, line, and polygon shapefiles. The issue encountered is that when multiple polygons with unique attributes were selected for shapefile creation, the shapefiles produced did not match each other. The .dbf had the correct number of records, but the .shp would have one record which was a single record that consisted of all of the selected polygons. Therefore, when uploading the shapefile the individual attributes were lost, and the combined polygon would take on the attributes of the first record in the .dbf.
 
 Edits were made so the .shp and .dbf would have the correct number of records so the individual polygons would retain individuality and unique attributes.
