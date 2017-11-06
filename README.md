@@ -102,7 +102,7 @@ DDS [Digital Data Services, Inc.](http://www.digitaldataservices.com), is a Geoc
 
 ### License ###
 
-[Original License] (https://github.com/mapbox/shp-write/blob/master/LICENSE)
+### [Original License] (https://github.com/mapbox/shp-write/blob/master/LICENSE)
 
 Copyright (c) 2015, Mapbox
 All rights reserved.
@@ -133,7 +133,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-DDS License
+### DDS License
 
 Copyright © 2016 [Digital Data Services, Inc.](http://www.digitaldataservices.com/geocortex) All Rights Reserved.
 
