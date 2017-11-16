@@ -86,7 +86,7 @@ define([
 ### Usage ###
 1. Utilizing the zip.js module, pass parsed geojson into the zip module's zip method (returns promise).
 ```
-zipMod.zip(parsedStr)
+zipMod.zip(parsedGj)
 ```
 2. Utilize saveAs method by passing it the response from step 1's zip method and the name of zip file as as arguments respectively. 
 ```
