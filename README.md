@@ -45,9 +45,8 @@ define([
   'dojo/_base/declare',
   '../BaseFeatureAction',
   '../exportUtils',
-  '../../libs/jszip/jszip',
   '../../libs/shp-write/zip'
-], function(declare, BaseFeatureAction, exportUtils, jszip, zipMod){
+], function(declare, BaseFeatureAction, exportUtils, zipMod){
   var clazz = declare(BaseFeatureAction, {
     name: 'ExportToShapefile',
     iconClass: 'icon-export',
