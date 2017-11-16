@@ -7,9 +7,11 @@ AMD Shapefile Writer for Web AppBuilder utilizing jszip to produce zipped shapef
 ![shp-write](https://user-images.githubusercontent.com/8050421/32394176-d82208d4-c0a1-11e7-9b45-e4036f6fd6ba.png)
 
 ### Changes
-The original source code was written to produce shapefiles for point, line, and polygon features. The issue encountered is when multiple polygons with unique attributes were selected for shapefile creation, the shapefiles produced did not match each other. The dbf file had the correct number of records, but the shp file would only contain a single record that consisted of all the selected polygons. Therefore, when uploading the shapefile the individual attributes were lost, and the combined polygons would take on the attributes of the first record in the dbf file.
+The original source code was written to produce shapefiles for point, line, and polygon features. The issue encountered is when multiple polygons with unique attributes were selected for shapefile creation, the shapefiles produced did not match each other. The way the original code was written, flattened and combined gemoetries into a single geometry. Therefore, when uploading the shapefile the individual attributes were lost, and the combined polygons would take on the attributes of the first record in the dbf file.
 
 Edits were made so the shp and dbf files would have the correct number of records so the individual polygons would retain individuality along with its unique attributes.
+
+Note: Updated code may not handle a shapefile containing multiple geometry types.
 
 ### Requirements ###
 Shapefile Writer  was developed using Web AppBuilder v2.5, but should be compatible with older versions that support AMD.
